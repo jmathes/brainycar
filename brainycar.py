@@ -3,10 +3,6 @@ import os
 from tesla import tesla
 from pprint import pprint
 
-grace = tesla.my_car()
-print grace.asleep
-pprint(grace.diagnostic())
-
 
 def main(car):
     while True:
