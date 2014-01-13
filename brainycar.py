@@ -6,6 +6,7 @@ from tesla import tesla
 from pprint import pprint
 
 logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s', level=logging.DEBUG)
+os.system("echo %s > pidfile" % os.getpid())
 
 def main(car):
     while True:
@@ -20,7 +21,7 @@ def run_all_checks(car):
     logging.info("awake: %s", car.awake)
     if car.awake:
         logging.info("speed: %s", car.drive_state['speed'])
-        if car.drive_state['speed'] > 45:
+        if car.drive_state['speed'] >= 45 or True:
             car.sun_roof_control('close')
 
 
