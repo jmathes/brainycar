@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import time
 from tesla import tesla
 from pprint import pprint
 
