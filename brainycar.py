@@ -23,7 +23,7 @@ def run_all_checks(car):
     logging.info("awake: %s", car.awake)
     if car.awake:
         logging.info("speed: %s", car.drive_state['speed'])
-        if car.drive_state['speed'] >= 45 or True:
+        if car.drive_state['speed'] >= 45:
             car.sun_roof_control('close')
 
 
