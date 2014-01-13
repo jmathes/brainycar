@@ -8,7 +8,6 @@ from pprint import pprint
 logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s', level=logging.DEBUG)
 os.system("rm pidfile")
 os.system("echo %s > pidfile" % os.getpid())
-os.system("cat pidfile")
 
 def main(car):
     while True:
