@@ -20,4 +20,4 @@ def run_all_checks():
 
 if __name__ == "__main__":
     car = tesla.my_car()
-    main()
+    main(car)
