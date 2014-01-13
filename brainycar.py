@@ -18,7 +18,7 @@ def main(car):
 
 def run_all_checks():
     if not car.asleep:
-        if car.drive_state['speed'] > 35:
+        if car.drive_state['speed'] > 45:
             car.sun_roof_control('close')
 
 
