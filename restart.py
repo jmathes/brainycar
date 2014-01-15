@@ -6,6 +6,7 @@ with open('pidfile', 'rb') as pidfile:
     print "killing %s" % pid
     os.system("kill %s" % pid)
 
-os.system("git pull origin master")
-os.system("git submodule update --recursive tesla")
-os.system("nohup ./brainycar.py &")
+print os.system("git pull")
+print os.system("git submodule update --recursive tesla")
+print os.system("nohup ./brainycar.py &")
+print "done"
