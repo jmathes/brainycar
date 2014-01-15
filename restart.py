@@ -9,4 +9,5 @@ with open('pidfile', 'rb') as pidfile:
 print os.system("git pull")
 print os.system("git submodule update --recursive tesla")
 print os.system("nohup ./brainycar.py &")
+os.system("ps aux | grep brainycar | grep -v grep")
 print "done"
