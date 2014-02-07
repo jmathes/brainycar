@@ -31,9 +31,9 @@ def run_all_checks(car):
             outide = car.climate_state['outside_temp']
             inside = car.climate_state['inside_temp']
             logging.info("Trying to get from %s to %s (%s outside)", inside, goal, outside)
-            if (True
-                    or goal < inside and outside < inside
-                    or goal > inside and outside > inside
+            if (False
+                    or (goal < inside and outside < inside)
+                    or (goal > inside and outside > inside)
                     ):
                 desired_sunroof_state = 100
             else:
